@@ -1,0 +1,71 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+APPTITLE	./CApp.cpp	/^#define APPTITLE /;"	d	file:
+APP_FAILED	./CApp.h	/^		APP_FAILED = 1$/;"	e	enum:CApp::APP_STATE
+APP_OK	./CApp.h	/^		APP_OK = 0,$/;"	e	enum:CApp::APP_STATE
+APP_STATE	./CApp.h	/^	enum APP_STATE$/;"	g	class:CApp
+CApp	./CApp.cpp	/^CApp::CApp() :$/;"	f	class:CApp
+CApp	./CApp.h	/^class CApp$/;"	c
+Camera	./Camera.hpp	/^    Camera(int _viewWidth , int _viewHeight) : x(0) , y(0) , viewWidth(_viewWidth) ,$/;"	f	class:Camera
+Camera	./Camera.hpp	/^class Camera{$/;"	c
+Camera_hpp	./Camera.hpp	/^#define Camera_hpp$/;"	d
+IDLE	./Sprite.h	/^        IDLE,JUMP,RUN,WALK$/;"	e	enum:Sprite::State
+IObj	./Sprite.h	/^class IObj{$/;"	c
+JUMP	./Sprite.h	/^        IDLE,JUMP,RUN,WALK$/;"	e	enum:Sprite::State
+OnCleanup	./CApp.cpp	/^void CApp::OnCleanup(){$/;"	f	class:CApp
+OnEvent	./CApp.cpp	/^void CApp::OnEvent(SDL_Event* event)$/;"	f	class:CApp
+OnExecute	./CApp.cpp	/^int CApp::OnExecute()$/;"	f	class:CApp
+OnInit	./CApp.cpp	/^int CApp::OnInit(){$/;"	f	class:CApp
+OnRender	./CApp.cpp	/^void CApp::OnRender(long delta){$/;"	f	class:CApp
+OnUpdate	./CApp.cpp	/^void CApp::OnUpdate(long delta){$/;"	f	class:CApp
+RUN	./Sprite.h	/^        IDLE,JUMP,RUN,WALK$/;"	e	enum:Sprite::State
+SCREEN_HEIGHT	./CApp.cpp	/^const int SCREEN_HEIGHT	= 800;$/;"	v
+SCREEN_WIDTH	./CApp.cpp	/^const int SCREEN_WIDTH 	= 1280;$/;"	v
+Sprite	./Sprite.h	/^    Sprite(){$/;"	f	class:Sprite
+Sprite	./Sprite.h	/^class Sprite : public IObj{$/;"	c
+State	./Sprite.h	/^    enum State{$/;"	g	class:Sprite
+WALK	./Sprite.h	/^        IDLE,JUMP,RUN,WALK$/;"	e	enum:Sprite::State
+_SPRITE_H_	./Sprite.h	/^#define _SPRITE_H_$/;"	d
+dx	./Sprite.h	/^    float dx;$/;"	m	class:Sprite
+freeImagesTexture	./Sprite.cpp	/^void Sprite::freeImagesTexture(std::vector<SDL_Texture *> &imagesVector){$/;"	f	class:Sprite
+getViewHeight	./Camera.hpp	/^    int getViewHeight(){$/;"	f	class:Camera
+getViewWidth	./Camera.hpp	/^    int getViewWidth(){$/;"	f	class:Camera
+getX	./Camera.hpp	/^    int getX(){$/;"	f	class:Camera
+getY	./Camera.hpp	/^    int getY(){$/;"	f	class:Camera
+loadImageRes	./Sprite.cpp	/^void Sprite::loadImageRes(SDL_Renderer *renderer , std::vector<std::string> &filenames ,$/;"	f	class:Sprite
+loadRes	./Sprite.cpp	/^void Sprite::loadRes(SDL_Renderer *render){$/;"	f	class:Sprite
+load_image	./CApp.h	/^    static SDL_Texture *load_image(SDL_Renderer *render , std::string filename){$/;"	f	class:CApp
+load_png_image	./CApp.h	/^    static SDL_Surface *load_png_image(std::string filename){$/;"	f	class:CApp
+mDirection	./Sprite.h	/^    int mDirection = 1;$/;"	m	class:Sprite
+mDst	./CApp.h	/^    SDL_Rect mDst;$/;"	m	class:CApp
+mDstRect	./Sprite.h	/^    SDL_Rect mDstRect;$/;"	m	class:Sprite
+mIdleImages	./Sprite.h	/^    std::vector<SDL_Texture *> mIdleImages;$/;"	m	class:Sprite
+mIdleLeftImages	./Sprite.h	/^    std::vector<SDL_Texture *> mIdleLeftImages;$/;"	m	class:Sprite
+mImageIndex	./Sprite.h	/^    int mImageIndex = 0;$/;"	m	class:Sprite
+mLastTime	./CApp.h	/^    long mLastTime;$/;"	m	class:CApp
+mRunTexture	./CApp.h	/^    SDL_Texture*    mRunTexture;$/;"	m	class:CApp
+mSprite	./CApp.h	/^    Sprite *mSprite;$/;"	m	class:CApp
+mSrc	./CApp.h	/^    SDL_Rect mSrc;$/;"	m	class:CApp
+mSrcRect	./Sprite.h	/^    SDL_Rect mSrcRect;$/;"	m	class:Sprite
+mState	./Sprite.h	/^    State mState = IDLE;$/;"	m	class:Sprite
+mWalkLeftImages	./Sprite.h	/^    std::vector<SDL_Texture *> mWalkLeftImages;$/;"	m	class:Sprite
+mWalkRightImages	./Sprite.h	/^    std::vector<SDL_Texture *> mWalkRightImages;$/;"	m	class:Sprite
+main	./main.cpp	/^int main(int argc, char* argv[])$/;"	f
+move	./Camera.hpp	/^    void move(int _x , int _y){$/;"	f	class:Camera
+move	./Sprite.cpp	/^void Sprite::move(int dir){$/;"	f	class:Sprite
+onDestory	./Sprite.cpp	/^void  Sprite::onDestory(){$/;"	f	class:Sprite
+render	./Sprite.cpp	/^void  Sprite::render(SDL_Renderer *render){$/;"	f	class:Sprite
+renderer	./CApp.h	/^	SDL_Renderer*    	renderer;$/;"	m	class:CApp
+running	./CApp.h	/^	bool 			running;$/;"	m	class:CApp
+stop	./Sprite.cpp	/^void Sprite::stop(){$/;"	f	class:Sprite
+update	./Sprite.cpp	/^void Sprite::update(){$/;"	f	class:Sprite
+viewHeight	./Camera.hpp	/^    int viewHeight;$/;"	m	class:Camera
+viewWidth	./Camera.hpp	/^    int viewWidth;$/;"	m	class:Camera
+window	./CApp.h	/^	SDL_Window*	    	window;$/;"	m	class:CApp
+x	./Camera.hpp	/^    int x;$/;"	m	class:Camera
+y	./Camera.hpp	/^    int y;$/;"	m	class:Camera
+~CApp	./CApp.cpp	/^CApp::~CApp()$/;"	f	class:CApp

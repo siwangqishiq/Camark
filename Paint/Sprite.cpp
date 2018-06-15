@@ -94,6 +94,10 @@ void  Sprite::render(SDL_Renderer *render){
             break;
     }//end switch
     
+    //debug
+    
+    SDL_SetRenderDrawColor(render, 0, 0, 0, 255);
+    SDL_RenderDrawRect(render, &mDstRect);
 }
 
 void Sprite::move(int dir){
@@ -102,11 +106,11 @@ void Sprite::move(int dir){
     
     if(dir > 0){//move right
         //std::cout << "move right" <<std::endl;
-        this->dx = 5;
+        this->dx = 10;
         this->mDirection = 1;
     }else{
         //std::cout << "move left" <<std::endl;
-        this->dx = -5;
+        this->dx = -10;
         this->mDirection = -1;
     }
     
@@ -161,6 +165,7 @@ void Sprite::loadImageRes(SDL_Renderer *renderer , std::vector<std::string> &fil
         images.push_back(texture);
     }//end for each
 }
+
 
 
 
