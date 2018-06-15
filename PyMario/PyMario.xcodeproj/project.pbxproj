@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7A5E89F20D0FE7200CE80AA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A5E89E20D0FE7200CE80AA /* Cocoa.framework */; };
+		B7A5E8A120D0FE7200CE80AA /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A5E8A020D0FE7200CE80AA /* SDL2.framework */; };
+		B7A5E8A420D0FE7200CE80AA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7A5E8A320D0FE7200CE80AA /* main.cpp */; };
+		B7A5E8A920D0FE7200CE80AA /* CApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7A5E8A820D0FE7200CE80AA /* CApp.cpp */; };
+		B7A5E8B220D1048000CE80AA /* tileset_gutter.png in Resources */ = {isa = PBXBuildFile; fileRef = B7A5E8B120D1048000CE80AA /* tileset_gutter.png */; };
+		B7A5E8B420D10D0E00CE80AA /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A5E8B320D10D0E00CE80AA /* SDL2_image.framework */; };
+		B7A5E8B720D10F8500CE80AA /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7A5E8B520D10F8500CE80AA /* Map.cpp */; };
+		B7A5E8BA20D13F7400CE80AA /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7A5E8B820D13F7400CE80AA /* Camera.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B7A5E89920D0FE7200CE80AA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B7A5E89B20D0FE7200CE80AA /* PyMario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PyMario.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7A5E89E20D0FE7200CE80AA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B7A5E8A020D0FE7200CE80AA /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = Library/Frameworks/../../../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = DEVELOPER_DIR; };
+		B7A5E8A320D0FE7200CE80AA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B7A5E8A620D0FE7200CE80AA /* CApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CApp.h; sourceTree = "<group>"; };
+		B7A5E8A820D0FE7200CE80AA /* CApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CApp.cpp; sourceTree = "<group>"; };
+		B7A5E8B020D1046D00CE80AA /* mario_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = mario_music.ogg; sourceTree = "<group>"; };
+		B7A5E8B120D1048000CE80AA /* tileset_gutter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileset_gutter.png; sourceTree = "<group>"; };
+		B7A5E8B320D10D0E00CE80AA /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		B7A5E8B520D10F8500CE80AA /* Map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
+		B7A5E8B620D10F8500CE80AA /* Map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Map.hpp; sourceTree = "<group>"; };
+		B7A5E8B820D13F7400CE80AA /* Camera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		B7A5E8B920D13F7400CE80AA /* Camera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
+		B7A5E8BB20D1408800CE80AA /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7A5E89720D0FE7200CE80AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A5E8B420D10D0E00CE80AA /* SDL2_image.framework in Frameworks */,
+				B7A5E89F20D0FE7200CE80AA /* Cocoa.framework in Frameworks */,
+				B7A5E8A120D0FE7200CE80AA /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7A5E89120D0FE7200CE80AA = {
+			isa = PBXGroup;
+			children = (
+				B7A5E8AF20D0FE7B00CE80AA /* assets */,
+				B7A5E8A220D0FE7200CE80AA /* PyMario */,
+				B7A5E89D20D0FE7200CE80AA /* Frameworks */,
+				B7A5E89C20D0FE7200CE80AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7A5E89C20D0FE7200CE80AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7A5E89B20D0FE7200CE80AA /* PyMario.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7A5E89D20D0FE7200CE80AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7A5E8B320D10D0E00CE80AA /* SDL2_image.framework */,
+				B7A5E89E20D0FE7200CE80AA /* Cocoa.framework */,
+				B7A5E8A020D0FE7200CE80AA /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7A5E8A220D0FE7200CE80AA /* PyMario */ = {
+			isa = PBXGroup;
+			children = (
+				B7A5E8A720D0FE7200CE80AA /* src */,
+			);
+			path = PyMario;
+			sourceTree = "<group>";
+		};
+		B7A5E8A720D0FE7200CE80AA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B7A5E8A320D0FE7200CE80AA /* main.cpp */,
+				B7A5E8A620D0FE7200CE80AA /* CApp.h */,
+				B7A5E8A820D0FE7200CE80AA /* CApp.cpp */,
+				B7A5E8B520D10F8500CE80AA /* Map.cpp */,
+				B7A5E8B620D10F8500CE80AA /* Map.hpp */,
+				B7A5E8B820D13F7400CE80AA /* Camera.cpp */,
+				B7A5E8B920D13F7400CE80AA /* Camera.hpp */,
+				B7A5E8BB20D1408800CE80AA /* Config.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		B7A5E8AF20D0FE7B00CE80AA /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				B7A5E8B120D1048000CE80AA /* tileset_gutter.png */,
+				B7A5E8B020D1046D00CE80AA /* mario_music.ogg */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7A5E89A20D0FE7200CE80AA /* PyMario */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7A5E8AC20D0FE7200CE80AA /* Build configuration list for PBXNativeTarget "PyMario" */;
+			buildPhases = (
+				B7A5E89620D0FE7200CE80AA /* Sources */,
+				B7A5E89720D0FE7200CE80AA /* Frameworks */,
+				B7A5E89820D0FE7200CE80AA /* Resources */,
+				B7A5E89920D0FE7200CE80AA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PyMario;
+			productName = PyMario;
+			productReference = B7A5E89B20D0FE7200CE80AA /* PyMario.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7A5E89220D0FE7200CE80AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = xinlan.com;
+				TargetAttributes = {
+					B7A5E89A20D0FE7200CE80AA = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = B7A5E89520D0FE7200CE80AA /* Build configuration list for PBXProject "PyMario" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B7A5E89120D0FE7200CE80AA;
+			productRefGroup = B7A5E89C20D0FE7200CE80AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7A5E89A20D0FE7200CE80AA /* PyMario */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7A5E89820D0FE7200CE80AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A5E8B220D1048000CE80AA /* tileset_gutter.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7A5E89620D0FE7200CE80AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A5E8BA20D13F7400CE80AA /* Camera.cpp in Sources */,
+				B7A5E8B720D10F8500CE80AA /* Map.cpp in Sources */,
+				B7A5E8A420D0FE7200CE80AA /* main.cpp in Sources */,
+				B7A5E8A920D0FE7200CE80AA /* CApp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B7A5E8AA20D0FE7200CE80AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B7A5E8AB20D0FE7200CE80AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B7A5E8AD20D0FE7200CE80AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					/usr/include,
+					/usr/local/include,
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/lib;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		B7A5E8AE20D0FE7200CE80AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					/usr/include,
+					/usr/local/include,
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/lib;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7A5E89520D0FE7200CE80AA /* Build configuration list for PBXProject "PyMario" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7A5E8AA20D0FE7200CE80AA /* Debug */,
+				B7A5E8AB20D0FE7200CE80AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7A5E8AC20D0FE7200CE80AA /* Build configuration list for PBXNativeTarget "PyMario" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7A5E8AD20D0FE7200CE80AA /* Debug */,
+				B7A5E8AE20D0FE7200CE80AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7A5E89220D0FE7200CE80AA /* Project object */;
+}
