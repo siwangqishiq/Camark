@@ -91,9 +91,23 @@ void CApp::OnEvent(SDL_Event* event){
 			break;
 			
 		case SDL_KEYDOWN:
-			if (event->key.keysym.sym == SDLK_ESCAPE) {
-				running = false;
-			}
+            /**
+             SDLK_RIGHT = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_RIGHT),
+             SDLK_LEFT = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_LEFT),
+             SDLK_DOWN = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_DOWN),
+             SDLK_UP
+             */
+            switch(event->key.keysym.sym){
+                case SDLK_ESCAPE:
+                    running = false;
+                    break;
+                case SDLK_LEFT:
+                    mCamera->moveToLeft();
+                    break;
+                case SDLK_RIGHT:
+                    mCamera->moveToRight();
+                    break;
+            }//end switch
 		default:
 			break;
 	}

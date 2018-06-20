@@ -37,13 +37,17 @@ public:
     int getCenterY(){
         return this->mCenterY;
     }
+    
+    void moveToLeft();
+    
+    void moveToRight();
 private:
     int mCenterX;
     int mCenterY;
     int mVieWidth;
     int mViewHeight;
     
-    int mOffset;//绘制
+    void limitMove();
 };
 
 #endif /* Camera_hpp */

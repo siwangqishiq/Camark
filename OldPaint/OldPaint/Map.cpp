@@ -8,7 +8,7 @@
 
 #include "CApp.h"
 #include "Map.hpp"
-
+#include <cmath>
 #include <iostream>
 
 using namespace std;
@@ -36,21 +36,28 @@ void Map::loadResource(SDL_Renderer *renderer){
 }
 
 void Map::update(){
-    pCamera->getVieWidth();
+    //pCamera->getVieWidth();
+    
+    //cout << pCamera->getCenterX() <<endl;
+    int halfWidth = pCamera->getVieWidth() / 2;
+    
+    this->mStartXIndex = max((int)((pCamera->getCenterX() - halfWidth) / Map::CUBE_SIZE) , 0);
+    this->mEndXIndex = min((int)((pCamera->getCenterX() + halfWidth) / Map::CUBE_SIZE + 1) , (int)Map::COL_NUM);
+    
+    mOffsetLeft = pCamera->getCenterX() - halfWidth - mStartXIndex * Map::CUBE_SIZE;
 }
 
 void Map::render(SDL_Renderer *render){
-    int left = 0;
+    int left;
     int top = 0;
     
     
-    
-    for(int i = 0 ; i < ROW_NUM ;i++){
+    for(int i = mStartYIndex ; i < mEndYIndex ;i++){
         top = i * Map::CUBE_SIZE;
         
-        for(int j = 0; j < COL_NUM ;j++){
+        left = -mOffsetLeft;
+        for(int j = mStartXIndex; j < mEndXIndex ;j++){
             //cout << ""<<maps[i][j];
-            left = j * Map::CUBE_SIZE;
             mMapDstRect.x = left;
             mMapDstRect.y = top;
             mMapDstRect.w = Map::CUBE_SIZE;
@@ -67,8 +74,10 @@ void Map::render(SDL_Renderer *render){
                     break;
                 
             }//end switch
+            
+            left += Map::CUBE_SIZE;
         }
-        cout << endl;
+        //cout << endl;
     }//end for i
-    cout << endl;
+    //cout << endl;
 }
